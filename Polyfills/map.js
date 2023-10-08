@@ -14,9 +14,13 @@ Array.prototype.newMap = function (callback) {
   return ret;
 };
 
-// const testRes = arr.newMap((it) => it * 2);
-const testRes = arr.newMap((it, index) => {
+// test 1
+const testRes = arr.newMap((it) => it * 2);
+console.log("test res --> ", testRes);
+
+// test 2
+const testRes2 = arr.newMap((it, index) => {
   return `idx ${index} - ${it}`;
 });
 
-console.log("testRes ", testRes);
+console.log("testRes2 ", testRes2);

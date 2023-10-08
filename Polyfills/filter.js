@@ -14,8 +14,16 @@ Array.prototype.newFilter = function (callback) {
   return ret;
 };
 
+// test 1
 const ans = words.newFilter((item) => {
   return item === "an";
 });
 
 console.log("ans --> ", ans);
+
+// test 2
+const ans2 = words.newFilter((item) => {
+  return item !== "an";
+});
+
+console.log("ans2 --> ", ans2);
