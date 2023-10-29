@@ -1,3 +1,11 @@
+// The filter() method creates a new array with all elements that pass the test implemented by the provided function
+
+/* 
+    Though process
+    1. A function which takes a function as an argument and an optional parameter for execution context
+    2. The function argument must be passed the array index, the item and the context
+    3. The result of the callback invokation is tested, if true the array element is pushed to a new array item
+*/
 const words = ["adam", "ate", "an", "apple"];
 
 Array.prototype.newFilter = function (callback) {
