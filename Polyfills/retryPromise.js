@@ -9,8 +9,6 @@ function retryPromise(promiseFunction, maxRetry) {
   });
 }
 
-const maxRetries = 3;
-
 function myPromiseFunction() {
   return new Promise((resolve, reject) => {
     // simulating an async operation
@@ -24,6 +22,7 @@ function myPromiseFunction() {
   });
 }
 
+const maxRetries = 3;
 retryPromise(myPromiseFunction, maxRetries)
   .then((res) => {
     console.log("res --> ", res);

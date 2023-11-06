@@ -7,6 +7,7 @@ function memoize(fn) {
   return function () {
     //using cache here (closure)
     const args = JSON.stringify(arguments);
+    console.log("arguments ", arguments);
 
     // if exists in cache return directly
     if (cache[args]) {
